@@ -1,15 +1,8 @@
-import React,{useEffect} from 'react';
+import React  from 'react';
 import axios from "axios";
 
 function App() {
 
-
-
-
-
-  useEffect(() => {
-    intialApiCall()
-  }, [])
 
   const url =
   "https://onviant--raven2.my.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG98dostKihXN7ZPVwwATiYU82beIOgo_SRWO2S_gBxF2dBaxRg19rHGIbkS5i.vN.xkFIJql9Y7oyft_Le&client_secret=26AADB44F49FFFBB5A264491265EB1EFB1BEC8BB15AB716F9A9184F901665E88&username=fysician@onviant.com.raven2&password=1234Abcd!";
@@ -35,6 +28,7 @@ const intialApiCall = async () => {
   return (
     <div className="App">
    salesforceTesting
+   <button onClick={intialApiCall}>intialApiCall</button>
     </div>
   );
 }
